@@ -9,11 +9,11 @@ const NavBar = () => {
                 <h4>Nego Store</h4>    
             </Link>
             <div>
-                <NavLink to={'/Category/Remeras'} className={'navbar-opciones'}> Remeras </NavLink>
-                <NavLink to={'/Category/Buzos'} className={'navbar-opciones'}> Buzos </NavLink>
-                <NavLink to={'/Category/Gorras'} className={'navbar-opciones'}> Gorras </NavLink>
-                <NavLink to={'/Category/Jeans'} className={'navbar-opciones'}> Jeans </NavLink>
-                <NavLink to={'/Category/Coleccion'} className={'navbar-opciones'}> Colección </NavLink> 
+                <NavLink to={'/Categoria/Remeras'} className={'navbar-opciones'}> Remeras </NavLink>
+                <NavLink to={'/Categoria/Buzos'} className={'navbar-opciones'}> Buzos </NavLink>
+                <NavLink to={'/Categoria/Gorras'} className={'navbar-opciones'}> Gorras </NavLink>
+                <NavLink to={'/Categoria/Jeans'} className={'navbar-opciones'}> Jeans </NavLink>
+                <NavLink to={'/Categoria/Coleccion'} className={'navbar-opciones'}> Colección </NavLink> 
             </div>
             <CartWidget/>
         </nav>
