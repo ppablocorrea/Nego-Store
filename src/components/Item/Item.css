@@ -1,0 +1,32 @@
+.titulo-item{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    margin: 0;
+    background-color: red;
+}
+
+.nombre-item{
+    margin: 0;
+}
+
+.precio-item{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.item{
+    width: 30%;
+    background-color: #2D2D2D;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+
+.item-imagen {
+    transition: transform .2s; 
+}
+ 
+.item-imagen:hover {
+    transform: scale(1.1); 
+}

@@ -1,0 +1,18 @@
+.navbar-principal{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.navbar-opciones {
+    margin-right: 25px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-titulo {
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,9 @@
+.imagen-carrito{
+    margin-right: 3px;
+    padding-top: 2px;
+}
+
+.cantidad-carrito{
+    color: white;
+    display: inline;
+}

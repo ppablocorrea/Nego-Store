@@ -1,0 +1,19 @@
+.Controles{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+
+.cantidad-item{
+    font-size: 15px;
+}
+
+.Boton-controlador{
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 50px;
+    color: black;
+}
