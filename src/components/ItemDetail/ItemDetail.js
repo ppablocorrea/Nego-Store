@@ -4,7 +4,7 @@ import ItemCount from '../ItemCount/ItemCount';
 
 const ItemDetail = ({id, name, img, category, description, price, stock}) => {
     return (
-        <article>
+        <article className='item'>
             <picture>
                 <img src={img} alt={name}/>
             </picture>

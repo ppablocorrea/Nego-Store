@@ -15,8 +15,6 @@ const ItemDetailContainer = () => {
         getProductById(itemId)
             .then(response  => {
                 setProduct(response)
-                console.log(itemId)
-                console.log(product)
             })
             .catch(error => {
                 console.error(error)
@@ -24,8 +22,8 @@ const ItemDetailContainer = () => {
     }, [itemId])
 
     return (
-        <div>
-            
+        <div className='ItemContainer'>
+            <ItemDetail {...product}/>
         </div>
     )
 }

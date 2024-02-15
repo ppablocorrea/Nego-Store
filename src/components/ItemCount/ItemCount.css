@@ -1,12 +1,17 @@
 .Controles{
     display: flex;
     justify-content: center;
-    background-color: black;
+    background-color: blue;
     color: white;
+    border-radius: 30px;
+    width: 20%;
+    height: 10%;
 }
 
 .cantidad-item{
-    font-size: 15px;
+    font-size: 20px;
+    margin: 16px 0 0 0;
+    padding: 0;
 }
 
 .Boton-controlador{
@@ -15,5 +20,15 @@
     background-color: transparent;
     border: none;
     font-size: 50px;
-    color: black;
+    color: white;
+}
+
+.botonCarrito{
+    border: none; 
+    color: white; 
+    padding: 14px 28px; 
+    cursor: pointer; 
+    border-radius: 5px;
+    background-color: #232323;
+    margin-bottom: 20px;
 }
