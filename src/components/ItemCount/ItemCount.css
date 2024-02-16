@@ -1,11 +1,11 @@
 .Controles{
     display: flex;
     justify-content: center;
-    background-color: blue;
+    background-color: #232323;
     color: white;
-    border-radius: 30px;
-    width: 20%;
+    width: 100%;
     height: 10%;
+    margin-bottom: 18px;
 }
 
 .cantidad-item{
