@@ -4,3 +4,21 @@
     border-radius: 30px;
     margin-bottom: 30px;
 }
+
+.btnTerminarCompra{
+    border: none; 
+    color: white; 
+    padding: 14px 28px; 
+    cursor: pointer; 
+    border-radius: 5px;
+    background-color: #232323;
+    text-decoration: none;
+}
+
+.informacionProducto{
+    margin-bottom: 30px;
+}
+
+.botonesFooter{
+    margin-bottom: 30px;
+}
