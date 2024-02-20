@@ -1,11 +1,12 @@
 .imagen-carrito{
     margin-right: 5px;
+    margin-bottom: 7px;
 }
 
 .cantidad-carrito{
     color: white;
     display: inline;
-    font-size: 21px;
+    font-size: 18px;
 }
 
 .sin-subrayado{
