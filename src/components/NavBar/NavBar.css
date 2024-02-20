@@ -1,18 +1,26 @@
-.navbar-principal{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding-top: 15px;
-    padding-bottom: 10px;
-}
-
 .navbar-opciones {
-    margin-right: 25px;
-    text-decoration: none;
-    color: white;
+    margin-right: 25px !important;
+    text-decoration: none !important;
+    color: white !important;
 }
 
 .navbar-titulo {
-    text-decoration: none;
-    color: white;
+    text-decoration: none !important;
+    color: white !important;
+}
+
+.navbarBg{
+    background-color: #232323 !important;
+    color: white !important;
+    font-size: 16px !important;
+    padding-bottom: 30px !important;
+    padding-top: 15px !important;
+}
+
+button.navbar-toggler.collapsed{
+    background: #2D2D2D;
+}
+
+button.navbar-toggler{
+    background: white;
 }

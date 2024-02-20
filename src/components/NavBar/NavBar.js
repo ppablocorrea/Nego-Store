@@ -1,22 +1,30 @@
 import './NavBar.css';
 import CartWidget from '../CartWidget/CartWidget';
-import { Link, NavLink } from 'react-router-dom';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+
 
 const NavBar = () => {
     return (
-        <nav className='navbar-principal'>
-            <Link className='navbar-titulo' to={'/'}>
-                <h4>Nego Store</h4>    
-            </Link>
-            <div>
-                <NavLink to={'/Categoria/Remeras'} className={'navbar-opciones'}> Remeras </NavLink>
-                <NavLink to={'/Categoria/Buzos'} className={'navbar-opciones'}> Buzos </NavLink>
-                <NavLink to={'/Categoria/Gorras'} className={'navbar-opciones'}> Gorras </NavLink>
-                <NavLink to={'/Categoria/Jeans'} className={'navbar-opciones'}> Jeans </NavLink>
-                <NavLink to={'/Categoria/Coleccion'} className={'navbar-opciones'}> Colección </NavLink> 
-            </div>
-            <CartWidget/>
-        </nav>
+        <Navbar expand="lg" className="navbarBg">
+          <Container>
+            <Navbar.Brand className='navbar-titulo' href="/">Nego Store</Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="ms-auto">
+                <Nav.Link href='/Categoria/Remeras' className='navbar-opciones'>Remeras</Nav.Link>
+                <Nav.Link href='/Categoria/Buzos' className='navbar-opciones'>Buzos</Nav.Link>
+                <Nav.Link href='/Categoria/Gorras' className='navbar-opciones'>Gorras</Nav.Link>
+                <Nav.Link href='/Categoria/Jeans' className='navbar-opciones'>Jeans</Nav.Link>
+                <Nav.Link href='/Categoria/Coleccion' className='navbar-opciones'>Colección</Nav.Link>
+              </Nav>
+              <Nav className="ms-auto">
+                <CartWidget/>
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
     )
 }
 
