@@ -1,0 +1,13 @@
+.btnLimpiarCarrito{
+    border: none; 
+    color: white; 
+    padding: 14px 28px; 
+    cursor: pointer; 
+    border-radius: 5px;
+    background-color: #232323;
+    text-decoration: none;
+}
+
+.cart{
+    background-color: #2D2D2D;
+}
