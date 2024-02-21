@@ -1,33 +1,21 @@
-.titulo-item{
+.Cards{
+    margin-bottom: 30px;
+    margin-right: 40px;
+    background-color: #2D2D2D !important;
+    color: white !important;
+    border-radius: 30px !important;
+}
+
+.titulo-Card{
     text-decoration: none;
     color: white;
-    text-align: center;
-    margin: 0;
-    background-color: red;
 }
 
-.nombre-item{
-    margin: 0;
-}
-
-.precio-item{
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 30px;
-}
-
-.item{
-    width: 30%;
-    background-color: #2D2D2D;
-    border-radius: 30px;
-    margin-bottom: 30px;
-}
-
-.item-imagen {
+.imagen-Card{
     transition: transform .2s;
-    transform: scale(0.90);  
+    transform: scale(0.85);
 }
- 
-.item-imagen:hover {
-    transform: scale(1); 
+
+.imagen-Card:hover{
+    transform: scale(0.93);
 }
