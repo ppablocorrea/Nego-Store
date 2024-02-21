@@ -10,9 +10,14 @@
     color: white; 
     padding: 14px 28px; 
     cursor: pointer; 
-    border-radius: 5px;
+    border-radius: 20px;
     background-color: #232323;
     text-decoration: none;
+}
+
+
+.texto-Card-Ultimo{
+    margin-bottom: 30px;
 }
 
 .informacionProducto{
@@ -33,4 +38,12 @@
     border: none !important;
     padding: 14px 28px !important;
     border-radius: 18px !important;
+}
+
+.detail-Image{
+    transform: scale(0.9);
+}
+
+.detail-Titulo{
+    padding-bottom: 5px;
 }

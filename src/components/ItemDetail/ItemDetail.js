@@ -52,17 +52,17 @@ const ItemDetail = ({id, name, img, category, description, price, stock}) => {
     */
     return (
         <Card className='Cards' style={{ width: '24rem' } }>
-            <Card.Img className='imagen-Card' variant="top" src={img} alt={name}/>  
+            <Card.Img className='detail-Image' variant="top" src={img} alt={name}/>  
             <Card.Body>
-                <Card.Title>{name}</Card.Title>
+                <Card.Title className='detail-Titulo'>{name}</Card.Title>
                 <Card.Text>
                     <p className='texto-Card'>Categoria: {category}</p>
                     <p className='texto-Card'>Descripción: {description}</p>
-                    <p className='texto-Card'>Precio: ${price}</p>
+                    <p className='texto-Card-Ultimo'>Precio: ${price}</p>
                 </Card.Text>
                 {
                     quantityAdded > 0 ? (
-                        <Link to='/Cart' className='btnTerminarCompra'>Terminar Compra</Link>
+                        <Link to='/Cart' className='btnTerminarCompra'>Terminar Compra</Link>   
                     ) : (
                         <ItemCount initial={1} stock={stock} onAdd={handleOnAdd}/>
                     )
