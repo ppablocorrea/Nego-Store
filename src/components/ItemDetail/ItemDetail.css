@@ -22,3 +22,15 @@
 .botonesFooter{
     margin-bottom: 30px;
 }
+
+.texto-Card{
+    margin: 8px 0 5px 0;
+    padding: 0;
+}
+
+.btnCard{
+    background-color: #232323 !important;
+    border: none !important;
+    padding: 14px 28px !important;
+    border-radius: 18px !important;
+}

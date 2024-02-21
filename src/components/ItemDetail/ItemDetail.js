@@ -3,6 +3,7 @@ import ItemCount from '../ItemCount/ItemCount';
 import { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { CartContext } from '../../context/CartContext';
+import Card from 'react-bootstrap/Card';
 
 
 const ItemDetail = ({id, name, img, category, description, price, stock}) => {
@@ -21,6 +22,7 @@ const ItemDetail = ({id, name, img, category, description, price, stock}) => {
         addItem(item, quantity)
     }
 
+    /*
     return (
         <article className='item'>
             <picture>
@@ -46,6 +48,27 @@ const ItemDetail = ({id, name, img, category, description, price, stock}) => {
                 }
             </footer>
         </article>
+    )
+    */
+    return (
+        <Card className='Cards' style={{ width: '24rem' } }>
+            <Card.Img className='imagen-Card' variant="top" src={img} alt={name}/>  
+            <Card.Body>
+                <Card.Title>{name}</Card.Title>
+                <Card.Text>
+                    <p className='texto-Card'>Categoria: {category}</p>
+                    <p className='texto-Card'>Descripción: {description}</p>
+                    <p className='texto-Card'>Precio: ${price}</p>
+                </Card.Text>
+                {
+                    quantityAdded > 0 ? (
+                        <Link to='/Cart' className='btnTerminarCompra'>Terminar Compra</Link>
+                    ) : (
+                        <ItemCount initial={1} stock={stock} onAdd={handleOnAdd}/>
+                    )
+                }
+            </Card.Body>
+        </Card>
     )
 }
 
