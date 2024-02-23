@@ -22,34 +22,6 @@ const ItemDetail = ({id, name, img, category, description, price, stock}) => {
         addItem(item, quantity)
     }
 
-    /*
-    return (
-        <article className='item'>
-            <picture>
-                <img src={img} alt={name}/>
-            </picture>
-            
-            <header>
-                <h2>{name}</h2>
-            </header>
-            
-            <section className='informacionProducto'>
-                <p>Categoria: {category}</p>
-                <p>Descripción: {description}</p>
-                <p>Precio: ${price}</p>
-            </section>
-            <footer className='botonesFooter'>
-                {
-                    quantityAdded > 0 ? (
-                        <Link to='/Cart' className='btnTerminarCompra'>Terminar Compra</Link>
-                        ) : (
-                        <ItemCount initial={1} stock={stock} onAdd={handleOnAdd}/>
-                    )
-                }
-            </footer>
-        </article>
-    )
-    */
     return (
         <Card className='Cards' style={{ width: '24rem' } }>
             <Card.Img className='detail-Image' variant="top" src={img} alt={name}/>  
@@ -62,7 +34,11 @@ const ItemDetail = ({id, name, img, category, description, price, stock}) => {
                 </Card.Text>
                 {
                     quantityAdded > 0 ? (
-                        <Link to='/Cart' className='btnTerminarCompra'>Terminar Compra</Link>   
+                        <>
+                            <h6 className='productoAgregado'>✅ Producto añadido correctamente a tu compra</h6>
+                            <Link to='/Cart' className='btnTerminarCompra'>Finalizar Compra</Link>
+                            <Link to='/' className='btnTerminarCompra'>Continuar Compra</Link>    
+                        </>                       
                     ) : (
                         <ItemCount initial={1} stock={stock} onAdd={handleOnAdd}/>
                     )

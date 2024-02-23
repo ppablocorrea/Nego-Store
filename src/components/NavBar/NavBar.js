@@ -3,21 +3,22 @@ import CartWidget from '../CartWidget/CartWidget';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { Link } from 'react-router-dom';
 
 
 const NavBar = () => {
     return (
         <Navbar expand="lg" className="navbarBg">
           <Container>
-            <Navbar.Brand className='navbar-titulo' href="/">Nego Store</Navbar.Brand>
+            <Navbar.Brand><Link className='navbar-titulo' to='/'>Nego Store</Link></Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ms-auto">
-                <Nav.Link href='/Categoria/Remeras' className='navbar-opciones'>Remeras</Nav.Link>
-                <Nav.Link href='/Categoria/Buzos' className='navbar-opciones'>Buzos</Nav.Link>
-                <Nav.Link href='/Categoria/Gorras' className='navbar-opciones'>Gorras</Nav.Link>
-                <Nav.Link href='/Categoria/Jeans' className='navbar-opciones'>Jeans</Nav.Link>
-                <Nav.Link href='/Categoria/Coleccion' className='navbar-opciones'>Colección</Nav.Link>
+                <Link className='navbar-opciones' to='/Categoria/Remeras'>Remeras</Link>
+                <Link className='navbar-opciones' to='/Categoria/Buzos'>Buzos</Link>
+                <Link className='navbar-opciones' to='/Categoria/Gorras'>Gorras</Link>
+                <Link className='navbar-opciones' to='/Categoria/Jeans'>Jeans</Link>
+                <Link className='navbar-opciones' to='/Categoria/Coleccion'>Coleccion</Link>
               </Nav>
               <Nav className="ms-auto">
                 <CartWidget/>

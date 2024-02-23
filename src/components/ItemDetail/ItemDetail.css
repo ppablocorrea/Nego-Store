@@ -13,6 +13,8 @@
     border-radius: 20px;
     background-color: #232323;
     text-decoration: none;
+    font-size: 0.8em;
+    margin-right: 7px;
 }
 
 
@@ -46,4 +48,9 @@
 
 .detail-Titulo{
     padding-bottom: 5px;
+}
+
+.productoAgregado{
+    margin-bottom: 36px;
+    font-size: 0.9em;
 }
