@@ -20,6 +20,14 @@
 
 .texto-Card-Ultimo{
     margin-bottom: 30px;
+    display: inline;
+}
+
+.texto-Card-UltimoPrevio{
+    display: inline;
+    margin-right: 8px;
+    text-decoration: line-through;
+    color: red;
 }
 
 .informacionProducto{

@@ -19,3 +19,14 @@
 .imagen-Card:hover{
     transform: scale(0.93);
 }
+
+.texto-Precio{
+    display: inline;
+}
+
+.texto-PrecioPrevio{
+    display: inline;
+    margin-right: 8px;
+    text-decoration: line-through;
+    color: red;
+}

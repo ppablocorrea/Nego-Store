@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
 
 
-const Item = ({id, name, img, price}) => {
+const Item = ({id, name, img, price, previousprice}) => {
     return (
         <Card className='Cards' style={{ width: '24rem' } }>
             <Link to={`/Item/${id}`}>
@@ -14,7 +14,7 @@ const Item = ({id, name, img, price}) => {
                     <Card.Title>{name}</Card.Title>
                 </Link>
                 <Card.Text>
-                    UYU ${price}
+                    <p className='texto-PrecioPrevio'>🇺​​​​​🇾​​​​​🇺​​​​​ {previousprice}</p> <p className='texto-Precio'>🇺​​​​​🇾​​​​​🇺​​​​​ {price}</p>                
                 </Card.Text>
             </Card.Body>
         </Card>

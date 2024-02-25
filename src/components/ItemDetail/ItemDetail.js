@@ -6,7 +6,7 @@ import { CartContext } from '../../context/CartContext';
 import Card from 'react-bootstrap/Card';
 
 
-const ItemDetail = ({id, name, img, category, description, price, stock}) => {
+const ItemDetail = ({id, name, img, description, price, stock, previousprice}) => {
 
     const [quantityAdded, setQuantityAdded] = useState(0)
 
@@ -28,9 +28,8 @@ const ItemDetail = ({id, name, img, category, description, price, stock}) => {
             <Card.Body>
                 <Card.Title className='detail-Titulo'>{name}</Card.Title>
                 <Card.Text>
-                    <p className='texto-Card'>Categoria: {category}</p>
-                    <p className='texto-Card'>Descripción: {description}</p>
-                    <p className='texto-Card-Ultimo'>Precio: ${price}</p>
+                    <p className='texto-Card'>{description}</p>
+                    <p className='texto-Card-UltimoPrevio'>🇺​​​​​🇾​​​​​🇺​​​​​ {previousprice}</p> <p className='texto-Card-Ultimo'>🇺​​​​​🇾​​​​​🇺​​​​​ {price}</p>
                 </Card.Text>
                 {
                     quantityAdded > 0 ? (
