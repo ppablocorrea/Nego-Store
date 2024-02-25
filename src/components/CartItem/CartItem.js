@@ -1,21 +1,18 @@
 import Card from 'react-bootstrap/Card';
 
-const CartItem = ({id, name, img, category, description, price, stock}) => {
+const CartItem = ({id, name, img, price}) => {
+
+    console.log(img)
+
     return (
-        <Card>
-            <Card.Header>{name}</Card.Header>
+        <Card className='Cards' style={{ width: '20rem' } }>
+            <Card.Img className='Imagen-Item-Carrito' variant="top" src={img} alt={name}/>  
             <Card.Body>
-                <blockquote className="blockquote mb-0">
-                    <p>
-                        {' '}
-                        {description}
-                        {' '}
-                    </p>
-                    <footer className="blockquote-footer">
-                    {price}
-                    </footer>
-                </blockquote>
-          </Card.Body>
+                <Card.Title>{name}</Card.Title>
+                <Card.Text>
+                    <p className='texto-Precio'>🇺​​​​​🇾​​​​​🇺​​​​​ {price}</p>                
+                </Card.Text>
+            </Card.Body>
         </Card>
     )
 }

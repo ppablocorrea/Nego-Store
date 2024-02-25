@@ -17,10 +17,14 @@ const Cart = () => {
         )
     }
 
+    console.log(cart)
+
     return (
         <div>
             <h1>Mi Compra</h1>
-            { cart.map(p => <CartItem key={p.id} {...p} />) }
+            <div className="CartItemsContainer">
+                { cart.map(p => <CartItem key={p.id} {...p} />) }
+            </div>
             <h4>Total: ${total}</h4>
             <button onClick={() => clearCart()} className="btnLimpiarCarrito">Limpiar carrito</button>
             <Link className="btnCheckout" to='/checkout'>Checkout</Link>

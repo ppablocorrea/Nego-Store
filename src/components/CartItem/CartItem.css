@@ -1,0 +1,11 @@
+.Imagen-Item-Carrito{
+    transform: scale(0.85);
+}
+
+.Cards{
+    margin-bottom: 30px;
+    margin-right: 40px;
+    background-color: #2D2D2D !important;
+    color: white !important;
+    border-radius: 30px !important;
+}
