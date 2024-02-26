@@ -2,3 +2,9 @@
     margin-bottom: 40px;
     font-size: 2.5em;
 }
+
+@media screen and (min-width: 480px) {
+    .titulo{
+        margin-left: 32px;
+    }
+}

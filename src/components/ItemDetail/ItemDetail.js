@@ -33,11 +33,11 @@ const ItemDetail = ({id, name, img, description, price, stock, previousprice}) =
                 </Card.Text>
                 {
                     quantityAdded > 0 ? (
-                        <>
-                            <h6 className='productoAgregado'>✅ Producto añadido correctamente a tu compra</h6>
+                        <div className='botonesCompra'>
+                            <h6 className='productoAgregado'>✅ Producto añadido a tu compra</h6>
                             <Link to='/Cart' className='btnTerminarCompra'>Finalizar Compra</Link>
                             <Link to='/' className='btnTerminarCompra'>Continuar Compra</Link>    
-                        </>                       
+                        </div>                       
                     ) : (
                         <ItemCount initial={1} stock={stock} onAdd={handleOnAdd}/>
                     )

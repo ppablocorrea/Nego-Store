@@ -3,9 +3,24 @@
 }
 
 .Cards{
-    margin-bottom: 30px;
+    margin-bottom: 18px;
     margin-right: 40px;
     background-color: #2D2D2D !important;
     color: white !important;
     border-radius: 30px !important;
+}
+
+.texto-Cantidad{
+    margin-bottom: 5px;
+}
+
+.boton-Item{
+    border: none; 
+    color: white; 
+    padding: 13px;
+    width: 60%; 
+    cursor: pointer; 
+    border-radius: 20px;
+    background-color: #232323;
+    margin-bottom: 20px;
 }

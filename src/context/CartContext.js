@@ -22,9 +22,11 @@ export const CartProvider = ({ children }) => {
         }
     }
 
-    const removeItem = (itemId) => {
-        const cartUpdated = cart.filter(prod => prod.id !== itemId)
+    const removeItem = (item) => {
+        const cartUpdated = cart.filter(prod => prod.id !== item.id)
         setCart(cartUpdated)
+        setTotalQuantity(totalQuantity-1)
+        setTotal(total - item.price*item.quantity)
     }
 
     const clearCart = () => {

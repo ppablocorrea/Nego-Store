@@ -13,7 +13,7 @@
     border-radius: 20px;
     background-color: #232323;
     text-decoration: none;
-    font-size: 0.8em;
+    font-size: 0.9em;
     margin-right: 7px;
 }
 
@@ -60,5 +60,9 @@
 
 .productoAgregado{
     margin-bottom: 36px;
-    font-size: 0.9em;
+    font-size: 1.4em;
+}
+
+.botonesCompra{
+    margin-bottom: 32px;
 }

@@ -17,17 +17,17 @@ const Cart = () => {
         )
     }
 
-    console.log(cart)
-
     return (
         <div>
             <h1>Mi Compra</h1>
             <div className="CartItemsContainer">
                 { cart.map(p => <CartItem key={p.id} {...p} />) }
             </div>
-            <h4>Total: ${total}</h4>
-            <button onClick={() => clearCart()} className="btnLimpiarCarrito">Limpiar carrito</button>
-            <Link className="btnCheckout" to='/checkout'>Checkout</Link>
+            <h4 className="texto-total">Importe total: ${total}</h4>
+            <div className="BotonesContainer">
+                <Link onClick={() => clearCart()} className='btnLimpiarCarrito'>Limpiar carrito</Link>
+                <Link to='/' className='btnCheckout'>Checkout</Link>
+            </div>
         </div>
     )
 }

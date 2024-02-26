@@ -3,9 +3,23 @@
     color: white; 
     padding: 14px 28px; 
     cursor: pointer; 
-    border-radius: 5px;
-    background-color: #232323;
+    border-radius: 20px;
+    background-color: #2D2D2D;
     text-decoration: none;
+    font-size: 0.9em;
+    margin-right: 7px;
+}
+
+.btnCheckout{
+    border: none; 
+    color: white; 
+    padding: 14px 28px; 
+    cursor: pointer; 
+    border-radius: 20px;
+    background-color: #2D2D2D;
+    text-decoration: none;
+    font-size: 0.9em;
+    margin-right: 7px;
 }
 
 .textoSinProductos{
@@ -18,4 +32,13 @@
     justify-content: space-evenly;
     margin-top: 30px;
     margin-left: 39px;
+}
+
+.texto-total{
+    font-size: 1.6em;
+}
+
+.BotonesContainer{
+    margin-bottom: 50px;
+    margin-top: 35px;
 }
