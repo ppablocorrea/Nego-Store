@@ -10,6 +10,19 @@
     margin-right: 7px;
 }
 
+.btnAgregarProductos{
+    border: none; 
+    color: white; 
+    padding: 14px 28px; 
+    cursor: pointer; 
+    border-radius: 20px;
+    background-color: #2D2D2D;
+    text-decoration: none;
+    font-size: 0.9em;
+    margin-right: 7px;
+    margin-left: 32px;
+}
+
 .btnCheckout{
     border: none; 
     color: white; 
@@ -23,7 +36,7 @@
 }
 
 .textoSinProductos{
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }
 
 .CartItemsContainer{
@@ -41,4 +54,13 @@
 .BotonesContainer{
     margin-bottom: 50px;
     margin-top: 35px;
+}
+
+@media screen and (min-width: 480px) {
+    .textoSinProductos{
+        margin-left: 32px;
+    }
+    .textoAgregarProductos{
+        margin-left: 32px;
+    }
 }
