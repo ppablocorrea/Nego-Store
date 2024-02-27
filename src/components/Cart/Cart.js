@@ -26,7 +26,7 @@ const Cart = () => {
             <h4 className="texto-total">Importe total: ${total}</h4>
             <div className="BotonesContainer">
                 <Link onClick={() => clearCart()} className='btnLimpiarCarrito'>Limpiar carrito</Link>
-                <Link to='/Checkout' className='btnCheckout'>Checkout</Link>
+                <Link to='/Checkout' className='btnCheckout'>Completar pedido</Link>
             </div>
         </div>
     )
