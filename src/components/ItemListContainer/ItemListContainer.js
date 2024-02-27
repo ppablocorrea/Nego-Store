@@ -2,6 +2,7 @@ import './ItemListContainer.css';
 import { useState, useEffect } from 'react';
 import ItemList from '../ItemList/ItemList';
 import { useParams } from 'react-router-dom';
+import Spinner from 'react-bootstrap/Spinner';
 
 import { getDocs, collection, query, where } from 'firebase/firestore';
 import { db } from '../../services/firebase/firebaseConfig';
@@ -40,8 +41,16 @@ const ItemListContainer = ({ greeting }) => {
 
     return (
         <div>
-            <h1 className='titulo'>{greeting}</h1>
-            <ItemList products = {products}/>
+            <div className={(loading) ? 'estilosCarga' : 'ocultar'}>
+                <h4 className='estiloObtenerProductos'>Obteniendo productos</h4>
+                <Spinner className='estiloSpinner' animation="border" role="status">
+                    <span className="visually-hidden">Loading...</span>
+                </Spinner>
+            </div>
+            <div className={(loading) ? 'ocultar' : ''}>
+                <h1 className='titulo'>{greeting}</h1>
+                <ItemList products = {products}/>
+            </div>
         </div>
     )
 }
