@@ -41,7 +41,7 @@ const ItemListContainer = ({ greeting }) => {
 
     return (
         <div>
-            <div className={(loading) ? 'estilosCarga' : 'ocultar'}>
+            <div className={(loading) ? '' : 'ocultar'}>
                 <h4 className='estiloObtenerProductos'>Obteniendo productos</h4>
                 <Spinner className='estiloSpinner' animation="border" role="status">
                     <span className="visually-hidden">Loading...</span>

@@ -18,7 +18,7 @@ const NavBar = () => {
                 <Link className='navbar-opciones' to='/Categoria/Buzos'>Buzos</Link>
                 <Link className='navbar-opciones' to='/Categoria/Gorras'>Gorras</Link>
                 <Link className='navbar-opciones' to='/Categoria/Jeans'>Jeans</Link>
-                <Link className='navbar-opciones' to='/Categoria/Coleccion'>Coleccion</Link>
+                <Link className='navbar-opciones ultima' to='/Categoria/Coleccion'>Coleccion</Link>
               </Nav>
               <Nav className="ms-auto">
                 <CartWidget/>

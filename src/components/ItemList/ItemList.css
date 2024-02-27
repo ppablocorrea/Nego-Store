@@ -2,11 +2,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    
+    margin-left: 37px;
 }
 
-@media screen and (min-width: 480px) {
-    .lista-items{
-        margin-left: 35px;
-    }
-}

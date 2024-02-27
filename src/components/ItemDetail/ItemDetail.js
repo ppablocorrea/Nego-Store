@@ -36,7 +36,7 @@ const ItemDetail = ({id, name, img, description, price, stock, previousprice}) =
                         <div className='botonesCompra'>
                             <h6 className='productoAgregado'>✅ Producto añadido a tu compra</h6>
                             <Link to='/Cart' className='btnTerminarCompra'>Finalizar Compra</Link>
-                            <Link to='/' className='btnTerminarCompra'>Continuar Compra</Link>    
+                            <Link to='/' className='btnContinuarCompra'>Continuar Compra</Link>    
                         </div>                       
                     ) : (
                         <ItemCount initial={1} stock={stock} onAdd={handleOnAdd}/>

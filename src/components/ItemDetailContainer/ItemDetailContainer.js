@@ -2,6 +2,7 @@ import './ItemDetailContainer.css';
 import { useState, useEffect } from 'react'; 
 import ItemDetail from '../ItemDetail/ItemDetail';
 import { useParams } from 'react-router-dom';
+import Spinner from 'react-bootstrap/Spinner';
 
 import { getDoc, doc } from 'firebase/firestore';
 import { db } from '../../services/firebase/firebaseConfig';
@@ -36,9 +37,18 @@ const ItemDetailContainer = () => {
     }, [itemId])
 
     return (
-        <div className='ItemContainer'>
-            <ItemDetail {...product}/>
+        <div>
+            <div className={(loading) ? 'estilosCarga' : 'ocultar'}>
+                <h4 className='estiloObtenerProductos'>Obteniendo el producto</h4>
+                <Spinner className='estiloSpinner' animation="border" role="status">
+                    <span className="visually-hidden">Loading...</span>
+                </Spinner>
+            </div>
+            <div className={(loading) ? 'ocultar' : 'ItemContainer'}>
+                <ItemDetail {...product}/>
+            </div>
         </div>
+        
     )
 }
 

@@ -1,4 +1,14 @@
 .ItemContainer{
     display: flex;
     justify-content: center;
+    margin-left: 37px;
 }
+
+.estiloObtenerProductos{
+    margin-bottom: 25px;
+}
+
+.ocultar{
+    display: none;
+}
+
