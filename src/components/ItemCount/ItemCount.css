@@ -36,3 +36,37 @@
     background-color: #232323;
     margin-bottom: 20px;
 }
+
+.ocultarTexto{
+    display: none;
+}
+
+.textoSinStock{
+    margin-bottom: 20px;
+}
+
+.botonDesactivado{
+    border: none; 
+    color: white; 
+    padding: 14px 28px; 
+    cursor: pointer; 
+    border-radius: 20px;
+    background-color: gray;
+    margin-bottom: 20px;
+}
+
+.Boton-controlador-desactivado{
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 50px;
+    color: gray;
+}
+
+.cantidad-item-desactivado{
+    font-size: 22px;
+    margin: 30px 0 0 0;
+    padding: 0;
+    color: gray;
+}

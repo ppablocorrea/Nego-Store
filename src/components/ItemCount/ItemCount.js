@@ -20,13 +20,14 @@ const ItemCount = ({stock,initial,onAdd}) => {
 
     return (
         <div>
+            <h4 className={(stock === 0) ? 'textoSinStock' : 'ocultarTexto'}>No hay stock disponible</h4>   
             <div className='Controles'>
-                <button className='Boton-controlador' onClick={decrement}>-</button>
-                <h6 className="cantidad-item">{quantity}</h6>
-                <button className='Boton-controlador' onClick={increment}>+</button>
+                <button className={(stock === 0) ? 'Boton-controlador-desactivado' : 'Boton-controlador'} onClick={decrement}>-</button>
+                <h6 className={(stock === 0) ? 'cantidad-item-desactivado' : 'cantidad-item'}>{quantity}</h6>
+                <button className={(stock === 0) ? 'Boton-controlador-desactivado' : 'Boton-controlador'} onClick={increment}>+</button>
             </div>
             <div>
-                <button className='botonCarrito' onClick={() => onAdd(quantity)} disabled={!stock}>
+                <button className={(stock === 0) ? 'botonDesactivado' : 'botonCarrito'} onClick={() => onAdd(quantity)} disabled={stock===0}>
                     Agregar al carrito
                 </button>
             </div>    
