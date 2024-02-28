@@ -29,7 +29,7 @@ const ItemDetail = ({id, name, img, description, price, stock, previousprice}) =
                 <Card.Title className='detail-Titulo'>{name}</Card.Title>
                 <Card.Text>
                     <p className='texto-Card'>{description}</p>
-                    <p className='texto-Card-UltimoPrevio'>🇺​​​​​🇾​​​​​🇺​​​​​ {previousprice}</p> <p className='texto-Card-Ultimo'>🇺​​​​​🇾​​​​​🇺​​​​​ {price}</p>
+                    <p className='texto-Card-UltimoPrevio'>UYU​​​​​​​​ {previousprice}</p> <p className='texto-Card-Ultimo'>UYU​​​​​​​​ {price}</p>
                 </Card.Text>
                 {
                     quantityAdded > 0 ? (

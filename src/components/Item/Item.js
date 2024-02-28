@@ -15,7 +15,7 @@ const Item = ({id, name, img, price, previousprice, stock}) => {
                     <Card.Title>{name}</Card.Title>
                 </Link>
                 <Card.Text>
-                    <p className='texto-PrecioPrevio'>🇺​​​​​🇾​​​​​🇺​​​​​ {previousprice}</p> <p className='texto-Precio'>🇺​​​​​🇾​​​​​🇺​​​​​ {price}</p>                
+                    <p className='texto-PrecioPrevio'>UYU {previousprice}</p> <p className='texto-Precio'>UYU​​​​​ {price}</p>                
                 </Card.Text>
             </Card.Body>
         </Card>

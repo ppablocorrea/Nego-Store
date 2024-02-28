@@ -23,7 +23,7 @@ const CartItem = ({id, name, img, price, quantity}) => {
                 <Card.Title>{name}</Card.Title>
                 <Card.Text>
                     <p className='texto-Cantidad'>Cantidad: {quantity} unidades</p>
-                    🇺​​​​​🇾​​​​​🇺​​​​​ {totalItem}                
+                    UYU {totalItem}                
                 </Card.Text>
             </Card.Body>
             <div>
