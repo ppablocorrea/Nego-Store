@@ -4,6 +4,8 @@ import { CartContext } from '../../context/CartContext';
 import { Timestamp, writeBatch, collection, getDocs, query, where, documentId, addDoc } from 'firebase/firestore';
 import { db } from '../../services/firebase/firebaseConfig';
 import CheckoutForm from '../CheckoutForm/CheckoutForm';
+import Spinner from 'react-bootstrap/Spinner';
+import { Link } from 'react-router-dom'
 
 
 const Checkout = () => {
@@ -75,11 +77,25 @@ const Checkout = () => {
     }
 
     if(loading){
-        return <h1>Se está generando su orden...</h1>
+        return(
+            <div>
+                <h1 className='textoGenerando'>Se está generando su orden...</h1>
+                <Spinner className='estiloSpinner' animation="border" role="status">
+                    <span className="visually-hidden">Loading...</span>
+                </Spinner>
+            </div>
+        ) 
     }
 
     if (orderId) {
-        return <h1>El id de su orden es: {orderId}</h1>
+        return (
+            <div>
+                <h1 className='textoCompletado'>¡Pedido completado! Gracias por elegirnos</h1>
+                <h5 className='textoidpedido'>Esta es tu orden: {orderId}</h5>
+                <h6 className='textoContactoEmail'>Revisa tu email para continuar con la compra 📩</h6>
+                <Link to='/' className='btnAgregarProductos'>Volver al catálogo</Link>
+            </div>
+        ) 
     }
 
     return (

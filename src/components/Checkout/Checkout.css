@@ -6,3 +6,48 @@
 .tituloCheckout{
     margin-bottom: 20px;
 }
+
+.estiloSpinner{
+    margin-top: 20px;
+}
+
+.textoidpedido{
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.btnAgregarProductos{
+    border: none; 
+    color: white; 
+    padding: 14px 28px; 
+    cursor: pointer; 
+    border-radius: 20px;
+    background-color: #2D2D2D;
+    text-decoration: none;
+    font-size: 0.9em;
+    margin-right: 7px;
+}
+
+.textoContactoEmail{
+    margin-bottom: 30px;
+}
+
+.textoCompletado{
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .textoGenerando{
+        font-size: 1.2em;
+    }
+    .textoidpedido{
+        font-size: 1em;
+    }
+    .textoCompletado{
+        font-size: 1.5em;
+    }
+    .textoContactoEmail{
+        font-size: 0.8em;
+    }
+}
+
