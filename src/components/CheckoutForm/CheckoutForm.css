@@ -21,3 +21,15 @@
     margin-bottom: 5px;
     margin-top: 15px;
 }
+
+.boton-desactivado{
+    border: none; 
+    color: white; 
+    padding: 13px;
+    width: 60%; 
+    cursor: pointer; 
+    border-radius: 20px;
+    background-color: gray;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}

@@ -91,7 +91,7 @@ const Checkout = () => {
         return (
             <div>
                 <h1 className='textoCompletado'>¡Pedido completado! Gracias por elegirnos</h1>
-                <h5 className='textoidpedido'>Esta es tu orden: {orderId}</h5>
+                <h5 className='textoidpedido'>Esta es tu orden: <span className='textoNroOrden'>{orderId}</span></h5>
                 <h6 className='textoContactoEmail'>Revisa tu email para continuar con la compra 📩</h6>
                 <Link to='/' className='btnAgregarProductos'>Volver al catálogo</Link>
             </div>
