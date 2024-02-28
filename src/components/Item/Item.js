@@ -10,13 +10,13 @@ const Item = ({id, name, img, price, previousprice, stock}) => {
                 <Card.Img className='imagen-Card' variant="top" src={img} alt={name}/>  
             </Link>  
             <Card.Body>
-                <p className={(stock === 0) ? 'textoAgotado' : 'ocultarTexto'}>Agotado</p>
                 <Link className='titulo-Card' to={`/Item/${id}`}>
                     <Card.Title>{name}</Card.Title>
                 </Link>
                 <Card.Text>
                     <p className='texto-PrecioPrevio'>UYU {previousprice}</p> <p className='texto-Precio'>UYU​​​​​ {price}</p>                
                 </Card.Text>
+                <p className={(stock === 0) ? 'textoAgotado' : 'ocultarTexto'}>-Agotado-</p>
             </Card.Body>
         </Card>
     )

@@ -22,6 +22,7 @@
 
 .texto-Precio{
     display: inline;
+    font-size: 1.05em;
 }
 
 .texto-PrecioPrevio{
@@ -29,6 +30,7 @@
     margin-right: 8px;
     text-decoration: line-through;
     color: red;
+    font-size: 1.05em;
 }
 
 .ocultarTexto{
@@ -37,7 +39,7 @@
 
 .textoAgotado{
     color: red;
-    margin-bottom: 5px;
     font-size: 1.2em;
     font-weight: 400;
+    margin: 0px;
 }

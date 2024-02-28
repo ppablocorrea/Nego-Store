@@ -1,0 +1,8 @@
+.ContainerFormulario{
+    display: flex;
+    justify-content: center;
+}
+
+.tituloCheckout{
+    margin-bottom: 20px;
+}
