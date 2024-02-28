@@ -20,7 +20,7 @@ const NavBar = () => {
                 <Link className='navbar-opciones' to='/Categoria/Jeans'>Jeans</Link>
                 <Link className='navbar-opciones ultima' to='/Categoria/Coleccion'>Coleccion</Link>
               </Nav>
-              <Nav className="ms-auto">
+              <Nav className="ms-auto carritocentrado">
                 <CartWidget/>
               </Nav>
             </Navbar.Collapse>

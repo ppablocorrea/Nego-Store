@@ -23,7 +23,7 @@ const ItemDetail = ({id, name, img, description, price, stock, previousprice}) =
     }
 
     return (
-        <Card className='Cards' style={{ width: '24rem' } }>
+        <Card className='Cards' style={{ width: '26rem' } }>
             <Card.Img className='detail-Image' variant="top" src={img} alt={name}/>  
             <Card.Body>
                 <Card.Title className='detail-Titulo'>{name}</Card.Title>
