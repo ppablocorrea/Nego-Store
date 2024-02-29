@@ -34,8 +34,18 @@
     margin-top: 15px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1250px) {
     .estiloFormulario{
         width: 70%;
+    }
+}
+
+@media screen and (max-width: 508px) {
+    .estiloFormulario{
+        width: 100%;
+        border-radius: 40px;
+    }
+    .textoizquierda{
+        font-size: 0.8em;
     }
 }
