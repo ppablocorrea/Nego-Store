@@ -33,3 +33,9 @@
     margin-bottom: 5px;
     margin-top: 15px;
 }
+
+@media screen and (max-width: 800px) {
+    .estiloFormulario{
+        width: 70%;
+    }
+}
