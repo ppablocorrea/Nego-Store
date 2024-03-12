@@ -10,7 +10,7 @@ const ItemDetail = ({id, name, img, description, price, stock, previousprice}) =
 
     const [quantityAdded, setQuantityAdded] = useState(0)
 
-    const { addItem } = useContext(CartContext)
+    const { addItem, isInCart } = useContext(CartContext)
 
     const handleOnAdd = (quantity) => {
         setQuantityAdded(quantity)
@@ -32,7 +32,7 @@ const ItemDetail = ({id, name, img, description, price, stock, previousprice}) =
                     <p className='texto-Card-UltimoPrevio'>UYU​​​​​​​​ {previousprice}</p> <p className='texto-Card-Ultimo'>UYU​​​​​​​​ {price}</p>
                 </Card.Text>
                 {
-                    quantityAdded > 0 ? (
+                    (quantityAdded > 0 || isInCart(id)) ? (
                         <div className='botonesCompra'>
                             <h6 className='productoAgregado'>✅ Producto añadido a tu compra</h6>
                             <Link to='/Cart' className='btnTerminarCompra'>Finalizar Compra</Link>
