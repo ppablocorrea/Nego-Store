@@ -18,9 +18,6 @@ const Checkout = () => {
 
     const createOrder = async ({ name, phone, email }) => {
         setLoading(true)
-        console.log(name)
-        console.log(phone)
-        console.log(email)
 
         try{
             const objOrder = {
