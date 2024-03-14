@@ -19,6 +19,11 @@
 .navbar-titulo {
     text-decoration: none !important;
     color: white !important;
+    transition-duration: 0.7s !important;
+}
+
+.navbar-titulo:hover {
+    color: #33AF8D !important;
 }
 
 .navbarBg{
